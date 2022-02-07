@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+
+# production
+/src/index.html
+
+# misc
+.DS_Store
