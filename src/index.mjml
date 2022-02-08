@@ -1,15 +1,119 @@
 <mjml>
-  <mj-body>
+
+  <mj-head>
+    <mj-title>Invitation email</mj-title>
+
+    <!-- Global Attributes -->
+    <mj-breakpoint width="600px" />
+
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+
+    <mj-attributes>
+      <mj-all color="#000000" font-family="Inter, sans-serif" padding="0" />
+      <mj-class name="email-body" background-color="#ffffff" />
+      <mj-class name="email-title" font-size="36px" font-weight="700" line-height="44px" align="center" padding="0 0 24px" />
+      <mj-class name="email-text" font-size="19px" font-weight="400" line-height="24px" padding="0 48px" />
+    </mj-attributes>
+    <!-- End Global Attributes -->
+
+    <!-- Inline styles -->
+    <mj-style inline="inline">
+      .email-link {
+        color: #70E0BB;
+      }
+    </mj-style>
+    <!-- End inline styles -->
+
+    <!-- Media styles -->
+    <mj-style>
+      @media (max-width: 425px) {
+        .email-text--mobile {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+      }
+    </mj-style>
+    <!-- End media styles -->
+
+  </mj-head>
+
+
+  <mj-body mj-class="email-body">
+
+    <!-- Email logo block -->
     <mj-section>
-      <mj-column>
-
-        <mj-image width="100px" src="images/logo-mjml.png" alt="MJML logo"></mj-image>
-
-        <mj-divider border-color="#F45E43"></mj-divider>
-
-        <mj-text font-size="20px" color="#F45E43" font-family="helvetica">Hello World</mj-text>
-
-      </mj-column>
+      <mj-group>
+        <mj-column padding="40px 0 60px">
+          <mj-image href="https://learning.cyper.ca/" target="_blank" src="images/cyper-logo.svg" alt="cyper-logo" width="243px" height="51px" />
+        </mj-column>
+      </mj-group>
     </mj-section>
+    <!-- End email logo block -->
+
+    <!-- Title and subtitle block -->
+    <mj-section>
+      <mj-group>
+        <mj-column padding="0 0 37px">
+          <mj-text mj-class="email-title">
+            Invitation email
+          </mj-text>
+          <mj-text mj-class="email-text" css-class="email-text--mobile" align="center">
+            Hello and welcome to your space at Cyper Learning Curve© - the best online training platform for knowledge transfer.
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End title and subtitle block -->
+
+    <!-- Main image block -->
+    <mj-section>
+      <mj-group>
+        <mj-column padding="0 0 60px">
+          <mj-image src="images/hands-grip.png" alt="hands-grip" width="426px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End main image block -->
+
+    <!-- Main content block -->
+    <mj-section>
+      <mj-group>
+        <mj-column padding="0 0 60px">
+          <mj-text mj-class="email-text" css-class="email-text--mobile">
+            Please click this link to proceed to your account:
+          </mj-text>
+          <mj-text mj-class="email-text" padding="0 48px 20px" css-class="email-text--mobile">
+            <a class="email-link" href="#" target="_blank">357c275a-f3e1-4ddd-80cd-f508055f761e</a>
+          </mj-text>
+          <mj-text mj-class="email-text" padding="0 48px 20px" css-class="email-text--mobile">
+            Once you are there, finish setting up your account.
+          </mj-text>
+          <mj-text mj-class="email-text" css-class="email-text--mobile">
+            It’s quite intuitive, and we feel you will be comfortable completing the process.
+          </mj-text>
+          <mj-text mj-class="email-text" css-class="email-text--mobile">
+            Should you require further assistance, please feel free to contact our team via
+            <a class="email-link" href="mailto:go@cyper.ca" target="_blank">go@cyper.ca</a>.
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End main content block -->
+
+    <!-- Footer block -->
+    <mj-section>
+      <mj-group>
+        <mj-column padding="0 0 60px 0">
+          <mj-text mj-class="email-text" padding="0 48px 20px" css-class="email-text--mobile">
+            Thank you for being a part of the Cyper Learning Curve family, and enjoy your journey!
+          </mj-text>
+          <mj-text mj-class="email-text" padding="0 48px" css-class="email-text--mobile">
+            The Cyper Learning Curve Team
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End footer block -->
+
   </mj-body>
 </mjml>
